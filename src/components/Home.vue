@@ -4,8 +4,17 @@
   </p>
 </template>
 <script>
+import OwnerService from '@/api-services/owner.service';
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  created() {
+    OwnerService.getAll().then((response) => {
+      console.log(response.data);
+    }).catch((error) => {
+      console.log(error.response.data);
+    });
+  }
 };
 </script>
 <style scoped>
