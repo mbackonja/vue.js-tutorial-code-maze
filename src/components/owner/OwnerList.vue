@@ -30,7 +30,7 @@
                 <td>{{ owner.address }}</td>
                 <td>{{ owner.dateOfBirth }}</td>
                 <td>
-                  <b-button variant="default">Update</b-button>
+                  <b-button variant="default">Details</b-button>
                 </td>
                 <td>
                   <b-button variant="success">Update</b-button>
